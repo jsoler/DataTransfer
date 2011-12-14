@@ -19,23 +19,23 @@
       <scope>test</scope>
     </dependency>
     
-    	<!-- SPRING DEPENDENCIES -->
-	 <dependency>
-	 	<groupId>org.springframework</groupId>
-	 	<artifactId>spring-context-support</artifactId>
-	 	<version>${spring.version}</version>
-	 </dependency>
-	 
-	 <dependency>
-	 	<groupId>org.springframework</groupId>
-	 	<artifactId>spring-tx</artifactId>
-	 	<version>${spring.version}</version>
-	 </dependency>
-		
-	
+    	
   </dependencies>
   
-  
+   <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+  	</build>
+  	
+  	
   <distributionManagement>
 		<!-- use the following if you're not using a snapshot version. -->
 		<repository>
