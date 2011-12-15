@@ -545,7 +545,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if it is a basic type or false otherwise
 	*/
-	public static boolean esTipoBasico(Class c) {
+	private static boolean esTipoBasico(Class c) {
 		return (c.isAssignableFrom(Long.class) || 
 				c.isAssignableFrom(Double.class) || 
 				c.isAssignableFrom(String.class) ||
@@ -567,7 +567,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if it is a basic type or false otherwise
 	*/
-	public static boolean esCollection(Object c) {
+	private static boolean esCollection(Object c) {
 		return c instanceof Collection;
 	}
 	
@@ -576,7 +576,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if a type Date
 	*/
-	public static boolean esDate(Class c) {
+	private static boolean esDate(Class c) {
 		return (c.isAssignableFrom(Date.class));
 	}
 	
@@ -585,7 +585,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if a type Calendar
 	*/
-	public static boolean esCalendar(Class c) {
+	private static boolean esCalendar(Class c) {
 		return (c.isAssignableFrom(Calendar.class) 
 				|| c.isAssignableFrom(GregorianCalendar.class));
 	}
@@ -595,7 +595,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if a type Long
 	*/
-	public static boolean esLong(Class c) {
+	private static boolean esLong(Class c) {
 		return (c.isAssignableFrom(Long.class));
 	}
 	
@@ -604,7 +604,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if an Integer
 	*/
-	public static boolean esInteger(Class c) {
+	private static boolean esInteger(Class c) {
 		return (c.isAssignableFrom(Integer.class));
 	}
 	
@@ -613,7 +613,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if a Double
 	*/
-	public static boolean esDouble(Class c) {
+	private static boolean esDouble(Class c) {
 		return (c.isAssignableFrom(Double.class));
 	}
 
@@ -622,7 +622,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if it is a Boolean
 	*/
-	public static boolean esBoolean(Class c) {
+	private static boolean esBoolean(Class c) {
 		return (c.isAssignableFrom(Boolean.class));
 	}
 	
@@ -631,7 +631,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if it is a Float
 	*/
-	public static boolean esFloat(Class c) {
+	private static boolean esFloat(Class c) {
 		return (c.isAssignableFrom(Float.class));
 	}
 	
@@ -640,7 +640,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if a String
 	*/
-	public static boolean esString(Class c) {
+	private static boolean esString(Class c) {
 		return (c.isAssignableFrom(String.class));
 	}
 	
@@ -649,7 +649,7 @@ public class DataTransfer {
 	* @param c class to check
 	* @return boolean true if a type Short
 	*/
-	public static boolean esShort(Class c) {
+	private static boolean esShort(Class c) {
 		return (c.isAssignableFrom(Short.class));
 	}
 	
