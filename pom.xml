@@ -9,7 +9,6 @@
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>3.0.5.RELEASE</spring.version>
   </properties>
   <dependencies>
     <dependency>
@@ -50,5 +49,58 @@
 			<url>http://nexus.emergya.es/nexus/content/repositories/third-party-snapshot/</url>
 		</snapshotRepository>
   </distributionManagement>
-	
+
+  <developers>
+	<developer>
+			<id>eserrano</id>
+			<name>Eduardo Serrano</name>
+			<email>eserrano@emergya.com</email>
+			<organization>Emergya Consultoría</organization>
+			<organizationUrl>http://www.emergya.es</organizationUrl>
+			<roles>
+				<role>Analista funcional</role>
+			</roles>
+	</developer>
+	<developer>
+			<id>jariera</id>
+			<name>Jose Alfonso Riera</name>
+			<email>jariera@emergya.com</email>
+			<organization>Emergya Consultoría</organization>
+			<organizationUrl>http://www.emergya.es</organizationUrl>
+			<roles>
+				<role>Desarrollador</role>
+			</roles>
+	</developer>
+	<developer>
+			<id>jsoler</id>
+			<name>Jaime Soler</name>
+			<email>jsoler@emergya.com</email>
+			<organization>Emergya Consultoría</organization>
+			<organizationUrl>http://www.emergya.es</organizationUrl>
+			<roles>
+				<role>Analista Programador</role>
+			</roles>
+	</developer>
+  </developers>
+  <licenses>
+    <license>
+     <name>GPL</name>
+     <url>http://www.gnu.org/copyleft/gpl.html</url>
+    </license>
+  </licenses>
+  <organization>
+  	<name>Emergya Consultoría</name>
+  	<url>http://www.emergya.es</url>
+  </organization>
+  <scm>
+  	<url>git://github.com/Emergya/DataTransfer.git</url>
+  </scm>
+  <issueManagement>
+  	<system>github</system>
+  	<url>https://github.com/Emergya/DataTransfer/issues</url>
+  </issueManagement>
+  <ciManagement>
+  	<system>jenkins</system>
+  	<url>http://jenkins.emergya.es/jenkins/view/Venezuela/job/Componentes Utilidades Aplicaciones/</url>
+  </ciManagement>	
 </project>
